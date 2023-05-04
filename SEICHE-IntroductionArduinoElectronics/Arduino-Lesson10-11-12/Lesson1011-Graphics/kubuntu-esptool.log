@@ -1,0 +1,90 @@
+[paul]:~$ sudo apt install esptool
+[sudo] password for paul:                                                                                           
+Reading package lists... Done                                                                                       
+Building dependency tree                                                                                            
+Reading state information... Done                                                                                   
+The following packages were automatically installed and are no longer required:                                     
+  libatomic1:i386 libbsd0:i386 libdrm-amdgpu1:i386 libdrm-intel1:i386 libdrm-nouveau2:i386 libdrm-radeon1:i386      
+  libdrm2:i386 libedit2:i386 libelf1:i386 libexpat1:i386 libffi7:i386 libglvnd0:i386 libllvm12:i386                 
+  libnvidia-cfg1-390 libnvidia-common-390 libnvidia-compute-390:i386 libnvidia-decode-390                           
+  libnvidia-decode-390:i386 libnvidia-encode-390 libnvidia-encode-390:i386 libnvidia-fbc1-390 libnvidia-gl-390      
+  libnvidia-gl-390:i386 libnvidia-ifr1-390 libpciaccess0:i386 libsensors5:i386 libstdc++6:i386 libvulkan1:i386      
+  libwayland-client0:i386 libx11-6:i386 libx11-xcb1:i386 libxau6:i386 libxcb-dri2-0:i386 libxcb-dri3-0:i386         
+  libxcb-glx0:i386 libxcb-present0:i386 libxcb-randr0:i386 libxcb-shm0:i386 libxcb-sync1:i386 libxcb-xfixes0:i386   
+  libxcb1:i386 libxdmcp6:i386 libxext6:i386 libxfixes3:i386 libxnvctrl0 libxshmfence1:i386 libxxf86vm1:i386         
+  mesa-vulkan-drivers:i386 nvidia-compute-utils-390 nvidia-kernel-source-390 nvidia-prime nvidia-settings           
+  nvidia-utils-390 pkg-config screen-resolution-extra xserver-xorg-video-nvidia-390                                 
+Use 'sudo apt autoremove' to remove them.                                                                           
+The following additional packages will be installed:                                                                
+  python3-ecdsa python3-pyaes python3-serial                                                                        
+Suggested packages:                                                                                                 
+  python3-wxgtk3.0 | python3-wxgtk                                                                                  
+The following NEW packages will be installed:                                                                       
+  esptool python3-ecdsa python3-pyaes python3-serial                                                                
+0 upgraded, 4 newly installed, 0 to remove and 345 not upgraded.                                                    
+Need to get 226 kB of archives.                                                                                     
+After this operation, 1,194 kB of additional disk space will be used.                                               
+Do you want to continue? [Y/n] Y                                                                                    
+Get:1 http://us.archive.ubuntu.com/ubuntu focal/universe amd64 python3-ecdsa all 0.15-1 [79.8 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu focal/universe amd64 python3-pyaes all 1.6.1-3 [18.0 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu focal/main amd64 python3-serial all 3.4-5.1 [72.4 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu focal/universe amd64 esptool all 2.8+dfsg-1 [56.2 kB]
+Fetched 226 kB in 1s (368 kB/s)   
+Selecting previously unselected package python3-ecdsa.
+(Reading database ... 235725 files and directories currently installed.)
+Preparing to unpack .../python3-ecdsa_0.15-1_all.deb ...
+Unpacking python3-ecdsa (0.15-1) ...
+Selecting previously unselected package python3-pyaes.
+Preparing to unpack .../python3-pyaes_1.6.1-3_all.deb ...
+Unpacking python3-pyaes (1.6.1-3) ...
+Selecting previously unselected package python3-serial.
+Preparing to unpack .../python3-serial_3.4-5.1_all.deb ...
+Unpacking python3-serial (3.4-5.1) ...
+Selecting previously unselected package esptool.
+Preparing to unpack .../esptool_2.8+dfsg-1_all.deb ...
+Unpacking esptool (2.8+dfsg-1) ...
+Setting up python3-pyaes (1.6.1-3) ...
+Setting up python3-serial (3.4-5.1) ...
+Setting up python3-ecdsa (0.15-1) ...
+Setting up esptool (2.8+dfsg-1) ...
+Processing triggers for man-db (2.9.1-1) ...
+[paul]:~$ cd Documents
+[paul]:~/Documents$ esptool --port /dev/ttyUSB0 write_flash 0x0 ./esp32_bootloader_v4.bin
+esptool.py v2.8
+Serial port /dev/ttyUSB0
+Connecting....
+Detecting chip type... ESP32
+Chip is ESP32D0WDQ6 (revision 1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 26MHz
+MAC: 94:b9:7e:c0:af:84
+Enabling default SPI flash mode...
+Configuring flash size...
+Auto-detected Flash size: 4MB
+Erasing flash...
+Took 0.48s to erase flash block
+Wrote 65536 bytes at 0x00000000 in 6.5 seconds (80.8 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+[paul]:~/Documents$ esptool --port /dev/ttyUSB0 write_flash 0x10000 ./WLED_0.13.1_ESP32.bin 
+esptool.py v2.8
+Serial port /dev/ttyUSB0
+Connecting.......
+Detecting chip type... ESP32
+Chip is ESP32D0WDQ6 (revision 1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 26MHz
+MAC: 94:b9:7e:c0:af:84
+Enabling default SPI flash mode...
+Configuring flash size...
+Auto-detected Flash size: 4MB
+Erasing flash...
+Took 2.39s to erase flash block
+Wrote 1182720 bytes at 0x00010000 in 119.0 seconds (79.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+[paul]:~/Documents$ 

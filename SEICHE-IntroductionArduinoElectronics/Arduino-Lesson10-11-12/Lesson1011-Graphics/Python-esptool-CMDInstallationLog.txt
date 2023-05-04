@@ -1,0 +1,163 @@
+C:\Windows\system32>pip -V
+pip 21.1.1 from c:\users\paul\appdata\local\programs\python\python38\lib\site-pa
+ckages\pip (python 3.8)
+
+C:\Windows\system32>pip install esptool
+Collecting esptool
+  Downloading esptool-3.3.tar.gz (213 kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 213 kB 504 kB/s
+Collecting bitstring>=3.1.6
+  Downloading bitstring-3.1.9-py3-none-any.whl (38 kB)
+Collecting cryptography>=2.1.4
+  Downloading cryptography-36.0.2-cp36-abi3-win_amd64.whl (2.2 MB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 2.2 MB 1.6 MB/s
+Collecting ecdsa>=0.16.0
+  Downloading ecdsa-0.17.0-py2.py3-none-any.whl (119 kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 119 kB 939 kB/s
+Collecting pyserial>=3.0
+  Downloading pyserial-3.5-py2.py3-none-any.whl (90 kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 90 kB 550 kB/s
+Collecting reedsolo<=1.5.4,>=1.5.3
+  Downloading reedsolo-1.5.4.tar.gz (271 kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 271 kB 930 kB/s
+Collecting cffi>=1.12
+  Downloading cffi-1.15.0-cp38-cp38-win_amd64.whl (179 kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 179 kB 939 kB/s
+Collecting pycparser
+  Downloading pycparser-2.21-py2.py3-none-any.whl (118 kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 118 kB 1.7 MB/s
+Collecting six>=1.9.0
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Using legacy 'setup.py install' for esptool, since package 'wheel' is not instal
+led.
+Using legacy 'setup.py install' for reedsolo, since package 'wheel' is not insta
+lled.
+Installing collected packages: pycparser, six, cffi, reedsolo, pyserial, ecdsa,
+cryptography, bitstring, esptool
+    Running setup.py install for reedsolo ... done
+    Running setup.py install for esptool ... done
+Successfully installed bitstring-3.1.9 cffi-1.15.0 cryptography-36.0.2 ecdsa-0.1
+7.0 esptool-3.3 pycparser-2.21 pyserial-3.5 reedsolo-1.5.4 six-1.16.0
+WARNING: You are using pip version 21.1.1; however, version 22.0.4 is available.
+
+You should consider upgrading via the 'c:\users\paul\appdata\local\programs\pyth
+on\python38\python.exe -m pip install --upgrade pip' command.
+
+C:\Windows\system32>
+
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Windows\system32>echo %PATH%
+C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\J
+ava\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\
+System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\VMware\VMware OVF Tool\;
+C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\nodejs\;C:\Program F
+iles\PuTTY\;C:\Users\Paul\AppData\Local\Programs\Python\Python38\Scripts\;C:\Use
+rs\Paul\AppData\Local\Programs\Python\Python38\;C:\Users\Paul\AppData\Roaming\np
+m
+
+C:\Windows\system32>pip -V
+pip 21.1.1 from c:\users\paul\appdata\local\programs\python\python38\lib\site-pa
+ckages\pip (python 3.8)
+
+C:\Windows\system32>pip install esptool
+Collecting esptool
+  Downloading esptool-3.3.tar.gz (213 kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 213 kB 504 kB/s
+Collecting bitstring>=3.1.6
+  Downloading bitstring-3.1.9-py3-none-any.whl (38 kB)
+Collecting cryptography>=2.1.4
+  Downloading cryptography-36.0.2-cp36-abi3-win_amd64.whl (2.2 MB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 2.2 MB 1.6 MB/s
+Collecting ecdsa>=0.16.0
+  Downloading ecdsa-0.17.0-py2.py3-none-any.whl (119 kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 119 kB 939 kB/s
+Collecting pyserial>=3.0
+  Downloading pyserial-3.5-py2.py3-none-any.whl (90 kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 90 kB 550 kB/s
+Collecting reedsolo<=1.5.4,>=1.5.3
+  Downloading reedsolo-1.5.4.tar.gz (271 kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 271 kB 930 kB/s
+Collecting cffi>=1.12
+  Downloading cffi-1.15.0-cp38-cp38-win_amd64.whl (179 kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 179 kB 939 kB/s
+Collecting pycparser
+  Downloading pycparser-2.21-py2.py3-none-any.whl (118 kB)
+     |¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 118 kB 1.7 MB/s
+Collecting six>=1.9.0
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Using legacy 'setup.py install' for esptool, since package 'wheel' is not instal
+led.
+Using legacy 'setup.py install' for reedsolo, since package 'wheel' is not insta
+lled.
+Installing collected packages: pycparser, six, cffi, reedsolo, pyserial, ecdsa,
+cryptography, bitstring, esptool
+    Running setup.py install for reedsolo ... done
+    Running setup.py install for esptool ... done
+Successfully installed bitstring-3.1.9 cffi-1.15.0 cryptography-36.0.2 ecdsa-0.1
+7.0 esptool-3.3 pycparser-2.21 pyserial-3.5 reedsolo-1.5.4 six-1.16.0
+WARNING: You are using pip version 21.1.1; however, version 22.0.4 is available.
+
+You should consider upgrading via the 'c:\users\paul\appdata\local\programs\pyth
+on\python38\python.exe -m pip install --upgrade pip' command.
+
+C:\Windows\system32>cd %userprofile%
+
+C:\Users\Paul>cd Documents
+
+C:\Users\Paul\Documents>esptool.py --port COM27 write_flash 0x0 ./esp32_bootload
+er_v4.bin
+esptool.py v3.3
+Serial port COM27
+Connecting....
+Detecting chip type... Unsupported detection protocol, switching and trying agai
+n...
+Connecting.....
+Detecting chip type... ESP32
+Chip is ESP32-D0WDQ6 (revision 1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme
+None
+Crystal is 26MHz
+MAC: 94:b9:7e:c0:a4:08
+Uploading stub...
+Running stub...
+Stub running...
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x0000ffff...
+Compressed 65536 bytes to 15901...
+Wrote 65536 bytes (15901 compressed) at 0x00000000 in 1.9 seconds (effective 283
+.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+
+C:\Users\Paul\Documents>esptool.py --port COM27 write_flash 0x10000 ./WLED_0.13.
+1_ESP32.bin
+esptool.py v3.3
+Serial port COM27
+Connecting.....
+Detecting chip type... Unsupported detection protocol, switching and trying agai
+n...
+Connecting....
+Detecting chip type... ESP32
+Chip is ESP32-D0WDQ6 (revision 1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme
+None
+Crystal is 26MHz
+MAC: 94:b9:7e:c0:a4:08
+Uploading stub...
+Running stub...
+Stub running...
+Configuring flash size...
+Flash will be erased from 0x00010000 to 0x00130fff...
+Compressed 1181776 bytes to 740239...
+Wrote 1181776 bytes (740239 compressed) at 0x00010000 in 66.5 seconds (effective
+ 142.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+
+C:\Users\Paul\Documents>
